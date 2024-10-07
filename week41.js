@@ -59,7 +59,22 @@ console.log("Task: B");
 
 const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'mango', 'pineapple', 'pear', 'peach', 'plum', 'watermelon', 'blueberry', 'raspberry', 'blackberry', 'strawberry', 'cherry', 'lemon', 'lime', 'pomegranate', 'apricot'];
 
+for (let position = 0; position < fruits.length; position++) {
+    if (fruits[position] == "raspberry") {
+        console.log(position);
+    }
+}
 
+function positionInList(list, fruit) {
+
+    for (let position = 0; position < list.length; position++) {
+        if (list[position] == fruit) {
+            return position;
+        }
+    }
+}
+
+console.log(positionInList(fruits,"apple"))
 
 
 
