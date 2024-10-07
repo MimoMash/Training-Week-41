@@ -101,10 +101,15 @@ for (let i = 0, j = 0; i < fruits.length; i++) {
 */
 console.log("Task: D");
 
+let count = 0;
 
+for (let i = 0; i < fruits.length; i++) {
+    if (fruits[i].length > 8) {
+        count++;
+    }
+}
 
-
-
+console.log(count);
 
 /* -----------------------------------------------------------------------------
     Task: E
