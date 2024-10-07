@@ -120,3 +120,27 @@ console.log("Task: E");
 
 const A = [1, 4, 5, "Bananas", true, 3.14, 9.81];
 const B = [1, 3.14, 5, 9.81, true, 4, "Bananas"];
+
+let listsAreEqual = true;
+
+while (listsAreEqual == true) {
+    if (A.length !== B.length) {
+        listsAreEqual = false;
+    }
+
+    let sortedListA = A.toSorted();
+    let sortedListB = B.toSorted(); 
+
+    for (let i = 0; i < A.length; i++) {
+        if (sortedListA[i] !== sortedListB[i]) {
+            listsAreEqual = false;
+        }
+    }
+
+    if (listsAreEqual == true) {
+        console.log("lists are equal")
+        break;
+    } else {
+        console.log("lists are not equal")
+    }
+}
