@@ -48,7 +48,6 @@ function add(list) {
 
 console.log(add(numbers));
 
-
 /* -----------------------------------------------------------------------------
     Task: B
 
@@ -76,11 +75,6 @@ function positionInList(list, fruit) {
 
 console.log(positionInList(fruits,"apple"))
 
-
-
-
-
-
 /* -----------------------------------------------------------------------------
     Task: C
 
@@ -90,12 +84,15 @@ console.log(positionInList(fruits,"apple"))
 */
 console.log("Task: C");
 
+let fruitsStartingWithLetterB = [];
 
-
-
-
-
-
+for (let i = 0, j = 0; i < fruits.length; i++) {
+    if (fruits[i].charAt(0) == "b") {
+        fruitsStartingWithLetterB.push(fruits[i]);
+        console.log(fruitsStartingWithLetterB[j]);
+        j++;
+    }
+}
 
 /* -----------------------------------------------------------------------------
     Task: D
